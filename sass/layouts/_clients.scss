@@ -1,0 +1,37 @@
+.clients h2 {
+  @include fonts(700, 36px, 1.17, null);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition-property: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.clients-logo {
+  fill: currentColor;
+  width: 106px;
+  height: 60px;
+  margin: 16px 32px;
+}
